@@ -3,7 +3,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height:60vh;
     margin: 0;
     font-family: 'VT323', monospace;
 }
@@ -31,14 +31,14 @@ body{
     box-shadow: inset 0 0 0 10px #595f43;
 }
 .game-border-3{
-    border:#8b966c solid 30px;
+    border:#8b966c solid 10px;
     border-radius: 20px;
     box-shadow: inset 0 0 0 5px #8b966c;
 }
 
 #instruction-text{
     position:absolute;
-    top: 60%;
+    top: 50%;
     color: #333;
     width: 300px;
     text-align: center;
@@ -83,10 +83,11 @@ body{
 
 .b{
     text-align:center;
-    font-size: small;
+    font-size:large;
     font-family: 'VT323', monospace;
     position: fixed;
-    width: 5%;
+    
+    width: 25%;
     display: inline-block;
     margin: 10px;
     font-weight: bold;
@@ -105,35 +106,36 @@ body{
 }
 
 .b1{
-    
-    bottom:15%;
-    top: 80%;
-    right: 25%;
-    left: 46.5%;
+    bottom:14.5%;
+    top: 81%;
+    right: 10%;
+    left: 35%;
 }
 .b2{
     top: 86%;
     bottom: 9%;
-    left: 40%;
+    left: 15%;
 }
 .b3{
     bottom: 9%;
     top: 86%;
-    left: 53%;
+    left: 55%;
 }
 .b4{
     bottom: 4%;
     top: 91%;
     right: 25%;
-    left: 46.5%;
+    left: 35%;
 }
 
 .start-btn{
-    width: 6%;
-    padding: 20px 10px 40px 10px ;
-    top: 84%;
-    left: 46%;
-    bottom: 10%;
+    padding: 10px 10px 10px 20px ;
+    top: 86%;
+    left: 41%;
+    width:12%;
+    bottom: 9%;
+    font-size:small;
+
 }
 
 .b:hover {
@@ -145,5 +147,12 @@ body{
 @media(min-width: 800px){
     .arrows,.start-btn{
         display: none;
+    }
+    body{
+    height: 90vh;
+    }
+
+    .game-border-3{
+        border:#8b966c solid 30px;
     }
 }
