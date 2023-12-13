@@ -15,30 +15,30 @@ body{
 #game-board{
     border-radius: 100px;
     display: grid;
-    grid-template-columns: repeat(20, 20px);
-    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(20, 15px);
     margin: 1px;
 }
 
 .game-border-1{
-    border:#595f43 solid 1px;
-    border-radius: 3px;
-    box-shadow: inset 0 0 0 2px #595f43;
+    border:#595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 9px #595f43;
 }
 .game-border-2{
-    border:#abb78a solid 1px;
-    border-radius: 2px;
-    box-shadow: inset 0 0 0 3px #595f43;
+    border:#abb78a solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #595f43;
 }
 .game-border-3{
-    border:#8b966c solid 1px;
-    border-radius: 2px;
-    box-shadow: inset 0 0 0 1px #8b966c;
+    border:#8b966c solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8b966c;
 }
 
 #instruction-text{
     position:absolute;
-    top: 52%;
+    top: 54%;
     color: #333;
     width: 300px;
     text-align: center;
@@ -82,7 +82,7 @@ body{
 }
 
 .b{
-    text-align:center;
+    text-align:top;
     font-size:large;
     font-family: 'VT323', monospace;
     position: fixed;
@@ -91,7 +91,7 @@ body{
     display: inline-block;
     margin: 10px;
     font-weight: bold;
-    padding: 10px 10px 10px 10px ;
+    padding: 0px 20px 20px 20px ;
     background-color: lightgray;
     text-shadow: -1px -1px black, 1px 1px white;
     color: gray;
@@ -101,7 +101,7 @@ body{
 	border-radius: 19px;
     box-shadow: 0 .2em gray; 
     cursor: pointer;
-    justify-content: center;
+    justify-content: top;
 
 }
 
@@ -129,7 +129,6 @@ body{
 }
 
 .start-btn{
-    padding: 10px 10px 10px 10px ;
     top: 82%;
     left: 37%;
     width:20%;
@@ -151,19 +150,9 @@ body{
     body{
     height: 90vh;
     }
-    .game-border-1{
-        border:#595f43 solid 10px;
-        border-radius: 30px;
-        box-shadow: inset 0 0 0 9px #595f43;
+    #game-board{
+        grid-template-columns: repeat(20, 20px);
+        grid-template-rows: repeat(20, 20px);
     }
-    .game-border-2{
-        border:#abb78a solid 8px;
-        border-radius: 26px;
-        box-shadow: inset 0 0 0 10px #595f43;
-    }
-    .game-border-3{
-        border:#8b966c solid 30px;
-        border-radius: 20px;
-        box-shadow: inset 0 0 0 5px #8b966c;
-    }
+    
 }

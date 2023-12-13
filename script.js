@@ -123,6 +123,7 @@ function move() {
 
 // Start game function
 function startGame() {
+    navigator.vibrate(100);
     gameStarted = true; // keep track of a running game
     instructionText.style.display = 'none';
     logo.style.display = 'none';
@@ -169,12 +170,12 @@ const startButton = () => {
 }
 
 function moveup() {
-    navigator.vibrate(200);
+    navigator.vibrate(100);
     direction = 'up';
 }
 
 function movedown() {
-    navigator.vibrate(200);
+    navigator.vibrate(100);
     direction = 'down';
 }
 
@@ -184,11 +185,10 @@ function moveleft() {
 }
 
 function moveright() {
-    navigator.vibrate(200);
+    navigator.vibrate(100);
     direction = 'right';
 }
 
-console.log(direction);
 
 document.addEventListener('keydown', handleKeyPress);
 
@@ -204,6 +204,7 @@ function increaseSpeed() {
         gameSpeedDelay -= 1;
     }
 }
+
 
 function checkCollision() {
     const head = snake[0];
