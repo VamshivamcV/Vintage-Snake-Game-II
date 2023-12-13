@@ -180,7 +180,7 @@ function movedown() {
 }
 
 function moveleft() {
-    navigator.vibrate(200);
+    navigator.vibrate(100);
     direction = 'left';
 }
 
