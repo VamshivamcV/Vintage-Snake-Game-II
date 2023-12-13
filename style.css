@@ -15,9 +15,10 @@ body{
 #game-board{
     border-radius: 100px;
     display: grid;
-    grid-template-columns: repeat(20, 15px);
-    grid-template-rows: repeat(20, 15px);
+    grid-template-columns: repeat(20, 12px);
+    grid-template-rows: repeat(20, 12px);
     margin: 1px;
+    justify-content: center;
 }
 
 .game-border-1{
@@ -158,6 +159,18 @@ body{
     #score,#highScore{
         font-weight: bolder;
         margin: 10px 0;
+    }
+    .game-border-1{
+        border:#595f43 solid 10px;
+        box-shadow: inset 0 0 0 10px #595f43;
+    }
+    .game-border-2{
+        border:#abb78a solid 8px;
+        box-shadow: inset 0 0 0 10px #595f43;
+    }
+    .game-border-3{
+        border:#8b966c solid 30px;
+        box-shadow: inset 0 0 0 5px #8b966c;
     }
     
 }
