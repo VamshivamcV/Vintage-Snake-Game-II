@@ -80,3 +80,70 @@ body{
 #logo{
     position: absolute;
 }
+
+.b{
+    text-align:center;
+    font-size: small;
+    font-family: 'VT323', monospace;
+    position: fixed;
+    width: 5%;
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.b1{
+    
+    bottom:15%;
+    top: 80%;
+    right: 25%;
+    left: 46.5%;
+}
+.b2{
+    top: 86%;
+    bottom: 9%;
+    left: 40%;
+}
+.b3{
+    bottom: 9%;
+    top: 86%;
+    left: 53%;
+}
+.b4{
+    bottom: 4%;
+    top: 91%;
+    right: 25%;
+    left: 46.5%;
+}
+
+.start-btn{
+    width: 6%;
+    padding: 20px 10px 40px 10px ;
+    top: 84%;
+    left: 46%;
+    bottom: 10%;
+}
+
+.b:hover {
+    background-color: #3c752d;
+    color: white;
+  }
+
+
+@media(min-width: 800px){
+    .arrows,.start-btn{
+        display: none;
+    }
+}

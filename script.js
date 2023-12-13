@@ -26,6 +26,9 @@ let food = generateFood();
 
 let highScore = 0;
 
+var snd1 = new Audio('Aout.wav');
+var snd2 = new Audio('Aeat.wav');
+
 // drawing game map, snake, food
 function draw() {
     board.innerHTML = '';
@@ -98,6 +101,7 @@ function move() {
     // snake.pop();
 
     if (head.x === food.x && head.y === food.y){
+        snd2.play();
         food = generateFood();
         increaseSpeed();
         clearInterval(gameInterval); //clear past interval
@@ -129,8 +133,11 @@ function startGame() {
     }, gameSpeedDelay);
 }
 
+
+
 // keypress event Listener
 function handleKeyPress(event) {
+
     if((!gameStarted && event.code === 'Space') || (!gameStarted && event.key === ' ')) 
         {
             startGame();
@@ -149,9 +156,35 @@ function handleKeyPress(event) {
                     direction = 'right';
                     break;
             }
-        }
-    
+    }
 }
+
+// touch buttons
+
+let bool = false;
+
+const startButton = () => {
+    resetGame();
+    startGame();
+}
+
+function moveup() {
+    direction = 'up';
+}
+
+function movedown() {
+    direction = 'down';
+}
+
+function moveleft() {
+    direction = 'left';
+}
+
+function moveright() {
+    direction = 'right';
+}
+
+console.log(direction);
 
 document.addEventListener('keydown', handleKeyPress);
 
@@ -172,11 +205,15 @@ function checkCollision() {
     const head = snake[0];
 
     if (head.x < 1 || head.x > gridSize || head.y < 1 || head.y > gridSize) {
+        snd1.play();
+        alert("You Lost the Game");
         resetGame();
     }
 
     for (let i = 1; i< snake.length; i++) {
         if (head.x ===snake[i].x && head.y === snake[i].y){
+            snd1.play();
+            alert("You Lost the Game");
             resetGame();
         }
     }
@@ -212,3 +249,5 @@ function updateHighScore() {
     }
     highScoreText.style.display = 'block';
 }
+
+
