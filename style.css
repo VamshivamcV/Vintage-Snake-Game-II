@@ -3,7 +3,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    height:65vh;
+    height:70vh;
     margin: 0;
     font-family: 'VT323', monospace;
 }
@@ -17,23 +17,23 @@ body{
     display: grid;
     grid-template-columns: repeat(20, 20px);
     grid-template-rows: repeat(20, 20px);
-    margin: 5px;
+    margin: 1px;
 }
 
 .game-border-1{
-    border:#595f43 solid 5px;
-    border-radius: 30px;
-    box-shadow: inset 0 0 0 9px #595f43;
+    border:#595f43 solid 1px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 2px #595f43;
 }
 .game-border-2{
-    border:#abb78a solid 3px;
-    border-radius: 26px;
-    box-shadow: inset 0 0 0 10px #595f43;
+    border:#abb78a solid 1px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 3px #595f43;
 }
 .game-border-3{
-    border:#8b966c solid 6px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 5px #8b966c;
+    border:#8b966c solid 1px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px #8b966c;
 }
 
 #instruction-text{
@@ -153,11 +153,17 @@ body{
     }
     .game-border-1{
         border:#595f43 solid 10px;
+        border-radius: 30px;
+        box-shadow: inset 0 0 0 9px #595f43;
     }
     .game-border-2{
         border:#abb78a solid 8px;
+        border-radius: 26px;
+        box-shadow: inset 0 0 0 10px #595f43;
     }
     .game-border-3{
         border:#8b966c solid 30px;
+        border-radius: 20px;
+        box-shadow: inset 0 0 0 5px #8b966c;
     }
 }

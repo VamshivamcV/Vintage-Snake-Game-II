@@ -169,18 +169,22 @@ const startButton = () => {
 }
 
 function moveup() {
+    navigator.vibrate(200);
     direction = 'up';
 }
 
 function movedown() {
+    navigator.vibrate(200);
     direction = 'down';
 }
 
 function moveleft() {
+    navigator.vibrate(200);
     direction = 'left';
 }
 
 function moveright() {
+    navigator.vibrate(200);
     direction = 'right';
 }
 
