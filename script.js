@@ -123,7 +123,6 @@ function move() {
 
 // Start game function
 function startGame() {
-    navigator.vibrate(100);
     gameStarted = true; // keep track of a running game
     instructionText.style.display = 'none';
     logo.style.display = 'none';
